@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin2-1-1-1.aspx.cs" Inherits="admin2_1_1_1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Thesis_Modify.aspx.cs" Inherits="admin2_1_1_1" %>
 
 <!DOCTYPE html>
 

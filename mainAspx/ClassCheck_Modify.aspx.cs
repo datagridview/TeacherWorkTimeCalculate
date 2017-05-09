@@ -11,14 +11,16 @@ public partial class admin1_1_1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Label2.Text = Session["TeacherID2"].ToString() + ":" + Session["TeacherName"].ToString();
+        Label2.Text = Session["TeacherID2"].ToString() + ":" + Session["TeacherName"].ToString();//显示修改人的信息
         Label3.Text = Session["TeacherID2"].ToString() + "当前修改" + ":";     
         Database mDB = new Database();
         string sql = "select [课程名称],[专业],[年级],[学生人数],[周理论节数],[周实验节数]";
         sql += ",[周课时],[周数],[总课时] from [课程教学表] where [工号]='" + Session["TeacherID2"].ToString() + "'";
+        //通过教师id来获得工作量信息
         GridView1.DataSource = mDB.getDataTable(sql);
         GridView1.DataBind();
         mDB.Close();
+        //将信息通过gridview显示出来
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -26,7 +28,8 @@ public partial class admin1_1_1 : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("admin1.aspx");
+        Response.Redirect("ClassCheck.aspx");
+        //返回到选择界面
     }
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {       
@@ -37,7 +40,8 @@ public partial class admin1_1_1 : System.Web.UI.Page
         TextBox5.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[5].Text.ToString();
         TextBox6.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[6].Text.ToString();
         TextBox7.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[7].Text.ToString();
-        TextBox8.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[9].Text.ToString();     
+        TextBox8.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[9].Text.ToString();  
+          
     }
     protected void Button3_Click(object sender, EventArgs e)
     {   
@@ -45,6 +49,9 @@ public partial class admin1_1_1 : System.Web.UI.Page
         {
             string a="已审核";
             Database mDB = new Database();
+
+
+            //修改信息
             string sql = "update [课程教学表] set [课程名称]='" + TextBox1.Text + "'";
             sql += ",[专业]='" + TextBox2.Text + "',[年级]='" + TextBox3.Text + "',[学生人数]='" + TextBox4.Text + "'";
             sql += ",[周理论节数]='" + TextBox5.Text + "',[周实验节数]='" + TextBox6.Text + "'";
@@ -70,6 +77,7 @@ public partial class admin1_1_1 : System.Web.UI.Page
         if (TextBox1.Text.Length != 0)
         {
             Database mDB = new Database();
+            //删除信息
             string sql = "delete  from [课程教学表] ";
             sql += "where [工号]='" + Session["TeacherID2"].ToString() + "'and [课程名称]='" + TextBox1.Text + "'";
             if (mDB.ExecuteSQL(sql)>0)

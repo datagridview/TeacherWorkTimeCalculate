@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin1.aspx.cs" Inherits="admin1" enableEventValidation="false"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ClassCheck.aspx.cs" Inherits="admin1" enableEventValidation="false"%>
 
 <!DOCTYPE html>
 

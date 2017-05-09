@@ -14,6 +14,7 @@ public partial class admin2_3_1_1 : System.Web.UI.Page
         Label2.Text = Session["TeacherID5"].ToString() + ":" + Session["TeacherName5"].ToString();
         Database mDB = new Database();
         string sql = "select [学号],[姓名],[项目名称],[年度],[总课时] from [项目实践表] where [工号]='" + Session["TeacherID5"].ToString() + "'";
+        //获取前一个页面选择的信息
         GridView1.DataSource = mDB.getDataTable(sql);
         GridView1.DataBind();
         mDB.Close();
@@ -30,6 +31,7 @@ public partial class admin2_3_1_1 : System.Web.UI.Page
             Database mDB = new Database();
             string sql = "update [项目实践表] set[状态]='" + a + "'";
             sql += "where[工号]='" + Session["TeacherID5"].ToString() + "'and [学号]='" + TextBox1.Text + "'";
+            //更新状态为不通过
             mDB.ExecuteSQL(sql);
             mDB.Close();
         }
@@ -52,6 +54,7 @@ public partial class admin2_3_1_1 : System.Web.UI.Page
             sql += ",[总课时]='" + TextBox5.Text + "',[年度]='" + TextBox4.Text + "',[状态]='" + a + "'";
             sql += ",[项目名称]='" + TextBox3.Text + "'";
             sql += "where[工号]='" + Session["TeacherID5"] + "'and [学号]='" + TextBox1.Text + "'";
+            //更新信息
             if (mDB.ExecuteSQL(sql)>0)
             {
                 Response.Write("<script>alert('修改成功并审核通过！！！');</script>");
@@ -65,7 +68,7 @@ public partial class admin2_3_1_1 : System.Web.UI.Page
     }
     protected void ImageButtonBack_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("admin2-3-1-1.aspx");
+        Response.Redirect("ProjectDo.aspx");
     }
     protected void Button4_Click(object sender, EventArgs e)
     {
@@ -73,6 +76,7 @@ public partial class admin2_3_1_1 : System.Web.UI.Page
         {
             Database mDB = new Database();
             string sql = "delete  from [项目实践表] ";
+            //删除
             sql += "where [工号]='" + Session["TeacherID5"].ToString() + "'and [学号]='" + TextBox1.Text + "'";
             if (mDB.ExecuteSQL(sql) > 0)
             {
