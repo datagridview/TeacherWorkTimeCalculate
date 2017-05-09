@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin4.aspx.cs" Inherits="admin4" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Admin_Data_Ipmort.aspx.cs" Inherits="admin4" %>
 
 <!DOCTYPE html>
 

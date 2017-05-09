@@ -15,6 +15,7 @@ public partial class admin9 : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
+        //添加用户，如果数据库里有重名，则显示工号重复，否则就写入数据库
         Class1 myclass = new Class1();
         string pwd = myclass.Encrypt(TextBox2.Text);
         Database mdb = new Database();

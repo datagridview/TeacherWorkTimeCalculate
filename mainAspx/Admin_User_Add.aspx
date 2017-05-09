@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin9.aspx.cs" Inherits="admin9" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Admin_User_Add.aspx.cs" Inherits="admin9" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">

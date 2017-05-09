@@ -39,30 +39,30 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="admin4.aspx" target="right" style="color:white"><i class="fa fa-bar-chart-o"></i> 数据管理<span class="fa arrow"></span></a>
+                        <a href="Admin_Data_Ipmort.aspx" target="right" style="color:white"><i class="fa fa-bar-chart-o"></i> 数据管理<span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="admin4.aspx" target="right" style="color:white"> 导入数据</a>
+                                <a href="Admin_Data_Ipmort.aspx" target="right" style="color:white"> 导入数据</a>
                             </li>
                             <li>
-                                <a href="admin5.aspx" target="right" style="color:white"> 工作统计</a>
+                                <a href="Admin_Work_Count.aspx" target="right" style="color:white"> 工作统计</a>
                             </li>
                             <li>
-                                <a href="admin6.aspx" target="right" style="color:white"> 工作制定</a>
+                                <a href="Admin_Work_ToDevelop.aspx" target="right" style="color:white"> 工作制定</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="admin9.aspx" target="right" style="color:white"><i class="fa fa-fw fa-file"></i> 用户管理<span class="fa arrow"></span></a>
+                        <a href="Admin_User_Add.aspx" target="right" style="color:white"><i class="fa fa-fw fa-file"></i> 用户管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="#" target="right" style="color:white"> 用户表</a>
                             </li>
                             <li>
-                                <a href="admin9.aspx" target="right" style="color:white"> 增加用户</a>
+                                <a href="Admin_User_Add.aspx" target="right" style="color:white"> 增加用户</a>
                             </li>
                             <li>
-                                <a href="admin10.aspx" target="right" style="color:white"> 修改用户</a>
+                                <a href="Admin_User_Modify.aspx" target="right" style="color:white"> 修改用户</a>
                             </li>
                         </ul>
                     </li>

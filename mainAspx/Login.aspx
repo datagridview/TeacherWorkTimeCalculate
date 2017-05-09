@@ -68,12 +68,6 @@
             width: 290px;
             height:37px;
         }
-          .auto-style12 {
-            margin-top:20px;
-            width:170px;
-            height:20px;
-            margin-left:64%;       
-        }
           .auto-style13 {
             margin-top:5px;
             width:350px;
@@ -179,7 +173,6 @@
             
             <br />
     </div>
-    <div class="auto-style12"  style="font-family:SimHei;font-size:20px;color:#ffffff">UUN.南京师范大学</div>    
     <div class="auto-style13"  style="font-family:SimHei;font-size:20px;color:#ffffff">NANJING NORMAL UNIVERSITY</div>
     <div class="auto-style1" aria-hidden="False">
     </div>
