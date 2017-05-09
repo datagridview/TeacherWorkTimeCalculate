@@ -16,7 +16,7 @@ public partial class admin9 : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         Class1 myclass = new Class1();
-        string pwd = myclass.Encrypt(TextBox2.Text);
+        string pwd = myclass.Encrypt(TextBox3.Text);
         Database mdb = new Database();
         string sql = "select [工号] from [职工表] where [工号]='" + TextBox1.Text + "'";
         if (mdb.ExecuteSQL(sql)>0)
@@ -25,14 +25,14 @@ public partial class admin9 : System.Web.UI.Page
         }        
         else
         {
-            string sql1 = "insert into[职工表]([工号],[密码],[姓名],[权限]) values('" + TextBox1.Text + "','" + pwd + "','" + TextBox3.Text + "','" + DropDownList1.SelectedItem.Text + "')";
+            string sql1 = "insert into[职工表]([工号],[密码],[姓名],[权限]) values('" + TextBox1.Text + "','" + pwd + "','" + TextBox2.Text + "','" + DropDownList1.SelectedItem.Text + "')";
             if (mdb.ExecuteSQL(sql1) > 0)
             {
                 Response.Write("<script>alert('操作成功！！！');</script>");
             }
             else
             {
-                Response.Write("<script>alert('操作失败！！！');</script>");
+                Response.Write(sql1);
             }
         }
         mdb.Close();

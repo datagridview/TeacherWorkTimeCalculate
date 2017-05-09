@@ -66,7 +66,7 @@ public partial class admin10 : System.Web.UI.Page
     {
         TextBox1.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[3].Text.ToString();
         TextBox2.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[6].Text.ToString();
-        TextBox3.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
+        //TextBox3.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
         TextBox4.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[4].Text.ToString();
         TextBox5.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[11].Text.ToString();
         TextBox6.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[12].Text.ToString();
