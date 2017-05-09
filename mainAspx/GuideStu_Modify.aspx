@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin2-2-1-1.aspx.cs" Inherits="admin2_2_1_1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="GuideStu_Modify.aspx.cs" Inherits="admin2_2_1_1" %>
 
 <!DOCTYPE html>
 <script runat="server">

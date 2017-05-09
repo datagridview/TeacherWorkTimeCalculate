@@ -15,13 +15,14 @@ public partial class admin2_2_1_1 : System.Web.UI.Page
         Label6.Text = "当前修改" + ":" + Session["TeacherID4"].ToString() + Session["TeacherName4"].ToString();
         Database mDB = new Database();
         string sql = "select [学号],[姓名],[年级],[年度],[总课时] from [授导学生表] where [工号]='" + Session["TeacherID4"].ToString() + "'";
+        //获取选择的指导学生的信息
         GridView1.DataSource = mDB.getDataTable(sql);
         GridView1.DataBind();
         mDB.Close();
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("admin2-2-1-1.aspx");
+        Response.Redirect("GuideStu.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {
@@ -30,6 +31,7 @@ public partial class admin2_2_1_1 : System.Web.UI.Page
             string a = "未通过";
             Database mDB = new Database();
             string sql = "update [授导学生表] set[状态]='" + a + "' where[工号]='" + Session["TeacherID4"].ToString() + "'and [学号]='" + TextBox1.Text + "'";
+            //更新未通过的信息
             mDB.ExecuteSQL(sql);
             mDB.Close();
         }
@@ -58,6 +60,7 @@ public partial class admin2_2_1_1 : System.Web.UI.Page
             string sql = "update [授导学生表] set[学号]='" + TextBox1.Text + "',[姓名]='" + TextBox2.Text + "'";
             sql += ",[总课时]='" + TextBox3.Text + "',[年度]='" + TextBox4.Text + "',[状态]='" + a + "'";
             sql += "where[工号]='" + Session["TeacherID4"].ToString() + "'and [学号]='" + TextBox1.Text + "'";
+            //审核成功就更新学生信息
             if (mDB.ExecuteSQL(sql)>0)
             {
                 Response.Write("<script>alert('修改成功并且通过审核！！！');</script>");
@@ -79,6 +82,7 @@ public partial class admin2_2_1_1 : System.Web.UI.Page
         {
             Database mDB = new Database();
             string sql = "delete  from [授导学生表] ";
+            //删除学生信息
             sql += "where [工号]='" + Session["TeacherID4"].ToString() + "'and [学号]='" + TextBox1.Text + "'";
             if (mDB.ExecuteSQL(sql)>0)
             {

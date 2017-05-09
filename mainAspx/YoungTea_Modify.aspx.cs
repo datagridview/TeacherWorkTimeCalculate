@@ -64,7 +64,7 @@ public partial class admin3_1_1_1 : System.Web.UI.Page
     }
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("admin3-1.aspx");
+        Response.Redirect("YoungTea.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {

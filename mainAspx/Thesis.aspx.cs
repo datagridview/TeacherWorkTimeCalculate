@@ -22,7 +22,7 @@ public partial class admin2_1 : System.Web.UI.Page
     {
         Session["TeacherID3"] = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text.ToString();
         Session["TeacherName3"] = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
-        Response.Redirect("admin2-1-1-1.aspx");
+        Response.Redirect("Thesis_Modify.aspx");
     }
     protected void TextBox1_TextChanged(object sender, EventArgs e)
     {
