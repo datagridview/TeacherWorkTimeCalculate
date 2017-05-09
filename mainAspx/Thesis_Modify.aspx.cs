@@ -22,7 +22,7 @@ public partial class admin2_1_1_1 : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("admin2-1.aspx");
+        Response.Redirect("Thesis.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {

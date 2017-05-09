@@ -1,10 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="admin9.aspx.cs" Inherits="admin9" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Admin_User_Add.aspx.cs" Inherits="admin9" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
+          .auto-style1 {
+            width:100%;
+            height:670px;
+            background-image:url('adbg3.png');
+            background-repeat:no-repeat;          
+         }
            .auto-style2 {
             width:100%;
             height:120px;
@@ -16,13 +22,6 @@
                 height:120px;
                 padding-left:60px;
                 padding-right:60px;
-        }
-         .auto-style4 {
-            width: 25%;
-            height: 20px;
-        }
-        .auto-style5 {
-            height: 20px;
         }
          </style>
 </head>
@@ -59,10 +58,10 @@
                     <td style="width:25%"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style4"></td>
-                    <td style="text-align:center" class="auto-style5"><asp:Label ID="Label3" runat="server" Text="初始密码：" ForeColor="#44536A" TabIndex="7" ></asp:Label></td>
-                    <td class="auto-style5">&nbsp;<asp:TextBox ID="TextBox3" runat="server" Width="200px" BorderStyle="Solid" BorderColor="#999999" BorderWidth="1px" Font-Names="黑体" Font-Size="10px" ForeColor="#999999" TabIndex="8"></asp:TextBox></td>
-                    <td class="auto-style4"></td>
+                    <td style="width:25%"></td>
+                    <td style="text-align:center"><asp:Label ID="Label3" runat="server" Text="初始密码：" ForeColor="#44536A" TabIndex="7" ></asp:Label></td>
+                    <td>&nbsp;<asp:TextBox ID="TextBox3" runat="server" Width="200px" BorderStyle="Solid" BorderColor="#999999" BorderWidth="1px" Font-Names="黑体" Font-Size="10px" ForeColor="#999999" TabIndex="8"></asp:TextBox></td>
+                    <td style="width:25%"></td>
                 </tr>
                 <tr>
                     <td style="width:25%"></td>

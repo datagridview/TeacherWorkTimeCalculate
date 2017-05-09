@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 
 public partial class admin10 : System.Web.UI.Page
 {
+    //读取数据库职工，显示在Gridview中
     protected void Page_Load(object sender, EventArgs e)
     {
         Database mDB = new Database();
@@ -18,6 +19,8 @@ public partial class admin10 : System.Web.UI.Page
         GridView1.DataBind();
         mDB.Close();
     }
+
+    //修改信息
     protected void Button1_Click(object sender, EventArgs e)
     {
         Class1 myclass = new Class1();
@@ -42,7 +45,7 @@ public partial class admin10 : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        //新加功能
+        //删除用户
         if(Label3.Text.Length!=0)
         {
             Database mDB = new Database();
@@ -62,11 +65,13 @@ public partial class admin10 : System.Web.UI.Page
             Response.Write("<script>alert('您还没有进行选择！！！');</script>");
         }
     }
+
+    //数据绑定
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
         TextBox1.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[3].Text.ToString();
         TextBox2.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[6].Text.ToString();
-        //TextBox3.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
+        TextBox3.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
         TextBox4.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[4].Text.ToString();
         TextBox5.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[11].Text.ToString();
         TextBox6.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[12].Text.ToString();
@@ -74,6 +79,9 @@ public partial class admin10 : System.Web.UI.Page
         DropDownList1.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[10].Text.ToString();
         Label3.Text = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text.ToString();
     }
+
+
+    //模糊查询
     protected void Button3_Click(object sender, EventArgs e)
     {
         if(TextBox8.Text.Length!=0)

@@ -7,30 +7,30 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
-public partial class admin1 : System.Web.UI.Page
+public partial class admin5 : System.Web.UI.Page
 {
+    //数据绑定
     protected void Page_Load(object sender, EventArgs e)
     {
         Database mDB = new Database();
-        string sql = "select [工号],[教师姓名],[提交时间],[状态] from [课程教学表]";
+        string sql = "select * from [工作量统计表]";
+        mDB.ExecuteSQL(sql);
         GridView1.DataSource = mDB.getDataTable(sql);
         GridView1.DataBind();
         mDB.Close();
     }
+    //跳转至具体页面
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
-        Session["TeacherID2"] = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text.ToString();
-        Session["TeacherName"] = GridView1.Rows[GridView1.SelectedIndex].Cells[2].Text.ToString();
-        Response.Redirect("admin1-1-1.aspx");
+        Session["Tgonghao"] = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
+        Response.Redirect("Admin_Work_Count_Info.aspx");
     }
-    protected void TextBox1_TextChanged(object sender, EventArgs e)
-    {
-       
-    }
+
+    //模糊查询
     protected void Button1_Click(object sender, EventArgs e)
     {
         Database mDB = new Database();
-        string sql = "select [工号],[教师姓名],[提交时间],[状态] from [课程教学表] where [工号]+[教师姓名] like'%" + TextBox1.Text + "%'";
+        string sql = "select * from 工作量统计表 where [工号] like'%" + TextBox1.Text + "%'";
         GridView1.DataSource = mDB.getDataTable(sql);
         GridView1.DataBind();
         mDB.Close();
