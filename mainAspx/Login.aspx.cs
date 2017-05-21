@@ -21,7 +21,7 @@ public partial class Login : System.Web.UI.Page
     {
         Image2.ImageUrl = "~/YanZhengma.aspx";
     }
-    protected void Button1_Click1(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)
     {
         Class1 myclass = new Class1();
         string Y = Session["CheckCode"].ToString();

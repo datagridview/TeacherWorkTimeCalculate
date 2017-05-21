@@ -11,9 +11,9 @@
    <frame id="top"  name="top"  scrolling="no" frameborder=0 framspacing=0 noresize src="top.aspx" MARGINHEIGHT=0 MARGINWIDTH=0 class="Noprint">
    <frameset name="frameinside" FRAMEBORDER=0 FRAMESPACING=0 cols='15%,*'>
        <frame id="body" name="body" scrolling="no" frameborder=0 framspacing=0 src="left2.aspx" MARGINHEIGHT=0 MARGINWIDTH=0 noresize >
-       <frame id="right" name="right" scrolling="auto" frameborder=0 framspacing=0 src="user1.aspx" MARGINHEIGHT=0 MARGINWIDTH=0 noresize > 
+       <frame id="right" name="right" scrolling="auto" frameborder=0 framspacing=0 src="User_Lesson_Whole.aspx" MARGINHEIGHT=0 MARGINWIDTH=0 noresize > 
    </frameset>  
-   <frame id="foot" name="foot" scrolling="no" frameborder=0 framspacing=0 noresize src="" MARGINHEIGHT=0 MARGINWIDTH=0 class="Noprint">   
+   <frame id="foot" name="foot" scrolling="no" frameborder=0 framspacing=0 noresize src="footer.aspx" MARGINHEIGHT=0 MARGINWIDTH=0 class="Noprint">   
    <noframes>
     <body>
     <p>This page uses frames, but your browser doesn't support them.</p>

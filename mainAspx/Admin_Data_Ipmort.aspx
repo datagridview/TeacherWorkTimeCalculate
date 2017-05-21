@@ -8,29 +8,29 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <style type="text/css">
-
-
-
-
-
          .white{
         width: 100%;
         height:670px;
         background-color:#f2f2f2;
         }
-
         .auto-style1 {
             width: 100%;
             height:120px;
             background-color:#eef1f7;
             background-image:url('bg.png');
             border-bottom:0px solid #c7cedc;
-        }
-        
-                  
-          
-                        
+        }                     
            .auto-style3 {
             width: 95%;
             height:131px;
@@ -41,24 +41,15 @@
             width: 100%;
             height:30px;
             background-color:#eef1f7;
-             border-bottom:2.5px solid #c7cedc;
-            
+             border-bottom:2.5px solid #c7cedc;     
         }
            .auto-style5 {
             width: 100%;
             height:5px;
             padding-top:9px;
             padding-left:9px;
-
-        }
-          
-                                   
-          
-            
-         
-          
-                     
-             .auto-style101 {
+        }             
+         .auto-style101 {
             width: 2928px;
             height: 16px;
         }
@@ -80,21 +71,23 @@
     
 </head>
 <body style="background-color:#f2f2f2">
-  
+              <div id="page-inner">  
+                           <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">
+                           导入数据<small> import data
+                               </small>
+                        </h2>
+                    </div>
+                </div>
     <form id="form1" runat="server">
   
                               <input type="hidden" name="selectvalue"  id="selectvalue" value="wu" />
   
-    <div  class="white">
-        <div class="auto-style1">        
-            <div style="height:40px"></div>   
-            <table style="width:100%; height:40px; border:0px">
-                <tr>
-                    <td style="text-align:center"><asp:Label ID="Label1" runat="server"  style="font-family:SimHei;margin-top:1px;font-size:12px;height:5px; width: 10px;color:#080a58" Text="当前页面：导入数据"></asp:Label></td>             
-                    <td style="width:80%"></td> 
-                </tr>  
-            </table>   
-         </div>
+
+
+
+
         <div class="auto-style3"> 
             <div class="auto-style4">
                  <div class="auto-style5">
@@ -148,9 +141,21 @@
                      <SortedDescendingCellStyle BackColor="#E9EBEF" />
                      <SortedDescendingHeaderStyle BackColor="#4870BE" />
           </asp:GridView>
-                </div>           
+          
     </div>
     </form>
+    </div>
+     <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script> 
 </body>
 </html>
 

@@ -66,16 +66,16 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="index.html" style="color:white"><i class="fa fa-dashboard"></i> 日常生活<span class="fa arrow active"></span></a>
+                        <a href="#" style="color:white"><i class="fa fa-dashboard"></i> 日常生活<span class="fa arrow active"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="user1.aspx" target="right" style="color:white"> 课程信息维护</a>
+                                <a href="User_Lesson_Whole.aspx" target="right" style="color:white"> 课程信息维护</a>
                             </li>
                             <li>
-                                <a href="user2-1-1.aspx" target="right"  style="color:white"> 学生指导维护</a>
+                                <a href="User_Stu_Thesis.aspx" target="right"  style="color:white"> 学生指导维护</a>
                             </li>
                             <li>
-                                <a href="user3-1.aspx" target="right"  style="color:white"> 事务服务维护</a>
+                                <a href="User_Lecture.aspx" target="right"  style="color:white"> 事务服务维护</a>
                             </li>
                         </ul>
                     </li>
@@ -83,18 +83,21 @@
                         <a href="ui-elements.html" style="color:white"><i class="fa fa-bar-chart-o"></i> 数据管理<span class="fa arrow active"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="#" style="color:white"> 导入数据</a>
+                                <a href="user4.aspx" target="right" style="color:white"> 导入数据</a>
                             </li>
                             <li>
-                                <a href="#" style="color:white"> 工作查询</a>
+                                <a href="user5.aspx" target="right" style="color:white"> 工作查询</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="empty.html" style="color:white"><i class="fa fa-fw fa-file"></i> 用户管理<span class="fa arrow active"></span></a>
+                        <a href="User_Info_Update.aspx" target="right"  style="color:white"><i class="fa fa-fw fa-file"></i> 用户管理<span class="fa arrow active"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#" style="color:white"> 修改信息</a>
+                                <a href="User_Info_Update.aspx" target="right" style="color:white"> 修改信息</a>
+                            </li>
+                             <li>
+                                <a href="User_Pwd_update.aspx" target="right" style="color:white"> 修改密码</a>
                             </li>
                         </ul>
                     </li>

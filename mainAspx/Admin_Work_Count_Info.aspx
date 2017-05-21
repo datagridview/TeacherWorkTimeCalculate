@@ -9,26 +9,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
         <style>
-            .auto-style1 {
-            width:100%;
-            height:1280px;
-            background-image:url('adbg3.png');
-            background-repeat:no-repeat;
-            font-family:SimHei;
-         }
             .auto-style11
             {
                 width: 100%;
-                height: 120px;
+                height: 39px;
                 background-color: #eef1f7;
                 background-image: url('bg.png');
                 border-bottom: 0px solid #c7cedc;
-            }
-          .auto-style2 {
-            background-repeat:no-repeat;
-            background-size:100%;
-            font-family:SimHei;
-                height: 32px;
             }
           .auto-style117 {
             width:80px;
@@ -38,17 +25,32 @@
             background-position:center;
         }  
             </style>
+     <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body style="background-color:#f2f2f2">
+     <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">
+                           工作量统计<small>Work Count</small>
+                        </h2>
+                    </div>
+                </div> 
  <form id="form1" runat="server">
  <div style="height:100%">
      <div class="auto-style11">
-        <div style="height:40px"></div>   
-        <table style="width:100%;height:60px;">
+        <table style="width:100%;height:28px;">
             <tr style="height:30px;">
-                <td style="width:20%; text-align:center"><asp:Label ID="lbldqym" runat="server" Font-Names="黑体" Font-Size="15px" ForeColor="#44536a" Text="当前页面：工作统计"></asp:Label></td>
-                <td ></td>
-                <td ></td>
+                
             </tr>
             <tr style="height:30px">
                 <td style="text-align:center"><asp:Label ID="Label3" runat="server" Font-Names="黑体" Font-Size="15px" ForeColor="#44536A" Text="当前教师：" TabIndex="1"></asp:Label>
@@ -186,8 +188,8 @@
                  <SortedDescendingHeaderStyle BackColor="#4870BE" />
              </asp:GridView>
          </div>
-        </div>
-    </form>
+        
+    </form></div>
 </body>
 </html>
 

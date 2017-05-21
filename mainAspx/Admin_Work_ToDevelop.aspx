@@ -9,20 +9,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
         <style>
-            .auto-style1 {
-            width:100%;
-            height:670px;
-            background-image:url('adbg3.png');
-            background-repeat:no-repeat;
-            font-family:SimHei;
-         }
-             .auto-style2 {
-            width:100%;
-            height:120px;
-            background-color:#eef1f7;
-            background-image:url('bg.png');
-            border-bottom:0px solid #c7cedc;
-        }
              .auto-style3 {
                 height:120px;
                 padding-left:60px;
@@ -41,18 +27,28 @@
             background-position:center;
         }  
             </style>
+     <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body style="background-color:#f2f2f2">
+     <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">
+                           工作制定<small> Work To Develop
+                               </small>
+                        </h2>
+                    </div>
+                </div> 
     <form id="form1" runat="server">
-    <div class="auto-style2">
-        <div style="height:40px"></div>
-        <table style="width:100%">
-            <tr style="height:40px">
-                <td style="text-align:center;width:20%"><asp:Label ID="lbldqym" runat="server" Font-Names="黑体" Font-Size="15px" ForeColor="#44536a" Text="当前页面：工作制定"></asp:Label></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
         &nbsp;
     <div class="auto-style3">
              <table style="width:100%">
@@ -110,8 +106,8 @@
                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
-    </div>
-    </form>
+    
+    </form></div>
 </body>
 </html>
 
